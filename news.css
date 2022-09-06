@@ -1,0 +1,359 @@
+:root {
+    --primary-color: #e76f51;
+    --secondary-color: #2a9d8f;
+    --light-color: #f8f9fa;
+    --dark-color: #6c757d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}   
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Varela Round', sans-serif;
+    margin: .7rem;
+    line-height: 1.3;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+/* utils */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 4px 16px;
+    text-align: center;
+}
+
+.btn-light {background-color: var(--light-color);}
+.btn-primary {background-color: var(--primary-color);}
+.btn-secondary {background-color: var(--secondary-color);}
+.btn-dark {background-color: var(--dark-color);}
+
+.btn:hover {opacity: .8;}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.bg-primary{background-color: var(--primary-color)!important; color: #fff;}
+.bg-light{background-color: var(--light-color)!important; color: var(--dark-color);}
+.bg-dark{background-color: var(--dark-color)!important; color: #fff;}
+.bg-secondary{background-color: var(--secondary-color)!important; color: #fff;}
+.bg-blueviolet{background-color:blueviolet !important; color: #fff;}
+
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.category {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .5rem .8rem;
+    border-radius: 15px;
+    margin-bottom: .8rem;
+}
+
+.category-sport {
+    background-color: cornflowerblue;
+    color:greenyellow;
+    font-weight: bold;
+}
+
+.category-technology {
+    background-color:greenyellow;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+.category-health {
+    background-color:blueviolet;
+    color:greenyellow;
+    font-weight: bold;
+}
+
+.card-primary{
+    background-color: var(--primary-color); 
+    padding: 1rem;
+}
+
+
+/* navbar */
+#main-nav {
+    background-color: #ffffff;
+    position:static;
+    width: 100%;
+    
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: .6fr 3fr 2fr;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    border-radius: 15px;
+    height: 70px; 
+    width: 70px;
+    background-color: var(--primary-color);
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li a {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    justify-self: end;
+}
+
+.social-icons a {
+    padding: 4px;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    font-size: 17px;
+}
+
+/* header */
+
+#header {
+    color: #fff;
+    background-color: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#header::before {
+    content: '';
+    background: url(rowing.jpeg) no-repeat center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+}
+
+#header .header-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 50vh;
+    align-items: center;
+}
+
+#header .header-content {
+    z-index: 1;
+}
+
+#header .header-content p {
+    margin-bottom: 2rem;
+}
+
+#main-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    padding-bottom: 1rem;
+}
+
+#main-articles h2 {
+    padding-top:1rem;
+}
+
+/* #footer */
+
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.7rem;
+}
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+
+#main-footer .footer-container > *:last-child {
+    background-color:darkslateblue;
+    grid-column: 1 / span 4;
+}
+
+#main-footer img {
+    width: 150px;
+}
+
+#main-footer a {
+    color:white
+}
+
+#main-footer .footer-container input[type="email"] {
+    width: 90%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+    width: 90%;
+    padding: .5rem;
+}
+
+#main-footer .footer-container h3 {
+    border-bottom: 3px var(--primary-color) solid;
+}
+
+#main-footer .footer-container li a {
+    border-bottom: 2px solid var(--primary-color);
+    letter-spacing: .1rem;
+}
+
+#main-footer .footer-container li a:hover {
+    opacity: .7;
+}
+
+#main-footer .footer-container li {
+    margin-bottom: .6rem;
+}
+
+#main-footer .social-icons a:hover {
+    color: blue;
+}
+
+/* article details */
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin-bottom:2.5rem;
+    gap: 1.5rem;
+}
+
+#categories ul li{
+    font-weight: bold;
+    border-bottom: 1px dotted #333;
+    padding: .5rem 0;
+    width: 90%;
+}
+
+#categories ul li:hover {
+    background-color: #e76f51;  
+}
+
+#categories ul li a:hover {
+    color: #fff;
+} 
+
+.meta {
+    background-color:bisque;
+    border-radius: .2rem;
+    text-align: center;
+}
+
+
+.page-container > *:first-child{
+    grid-row: 1 / span 3;
+}
+
+.card-aside {
+    margin-top: 90px;
+}
+
+/* mobile css*/
+@media (max-width:580px){
+    html {
+        font-size: 9px;
+    }
+
+    #main-nav .container,
+    .page-container,
+    #header .header-container,
+    #main-articles .articles-container,
+    #main-footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+   
+    #main-footer .footer-container > *:last-child{
+        grid-column: 1;
+    }
+    .logo {
+    height: 50px; 
+    width: 50px;
+    justify-self: center;
+    }
+    .social-icons  {
+        display: none;
+    }
+    .nav ul {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .page-container > *:first-child{
+        grid-row: 3 / span 3;
+    }
+    .card-aside {
+        margin-top: 0;
+    }
+    #main-footer img {
+        width:80px;
+    }
+    #main-footer .footer-container {
+        justify-items: baseline;
+    }
+    #main-footer .footer-container li a{
+        border: none;
+    }
+}
