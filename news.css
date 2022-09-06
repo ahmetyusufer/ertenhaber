@@ -257,6 +257,10 @@ p {
     border-bottom: 3px var(--primary-color) solid;
 }
 
+#main-footer .footer-container p {
+    padding: 0 15px;
+}
+
 #main-footer .footer-container li a {
     border-bottom: 2px solid var(--primary-color);
     letter-spacing: .1rem;
@@ -353,6 +357,7 @@ p {
     #main-footer .footer-container {
         justify-items: baseline;
     }
+    
     #main-footer .footer-container li a{
         border: none;
     }
